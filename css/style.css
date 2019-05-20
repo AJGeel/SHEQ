@@ -64,6 +64,7 @@ nav a:hover{
     width: 100%;
     background-color: #EBECEF;
     box-sizing: border-box;
+    justify-content: center;
     
     display: flex;
     overflow: hidden;
@@ -71,6 +72,12 @@ nav a:hover{
 
 .container.red{
     background-color: #efebeb;
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        background-color: green !important;
+    }
 }
 
 .left{
@@ -308,6 +315,10 @@ nav a:hover{
     box-shadow: 0px 10px 30px rgba(0,0,0,.2);   
 }
 
+.table-options img{
+    max-width: 18px;
+}
+
 .table-options .search-bar{
     padding: 20px 32px !important;
     margin-right: auto;
@@ -365,6 +376,86 @@ nav a:hover{
 
 .table-container table tr th{
     padding: 20px;
+}
+
+.melding-form{
+    margin-top: 100px;
+    padding: 60px;
+    box-sizing: border-box;
+    width: 680px;
+    background-color: #fff;
+    animation: fadeInFromBottom 1s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 2px 30px rgba(0,0,0,.1);
+    margin-bottom: 60px;
+}
+
+.melding-form h2{
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.melding-form h2:first-child{
+    margin-top: 0px;
+}
+
+.melding-form label{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.melding-form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bab0b0;
+    background-color: #efebeb;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.melding-form select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bab0b0;
+    background-color: #efebeb;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.melding-form .form-comment{
+    font-style: italic;
+    opacity: .7;
+    margin-bottom: 6px;
+}
+
+.melding-form button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--spie-red);
+    border: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.melding-form button:hover{
+    cursor: pointer;
 }
 
 

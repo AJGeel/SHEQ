@@ -22,10 +22,63 @@
 <div class="container red">
     <form class="melding-form">
         <h2>Algemene Informatie</h2>
-        <h3></h3>
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel" name="input-01" placeholder="Bijvoorbeeld: 'Ongeval aan de A4'">
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="input-01">
+
+        <h2>Header Title Here</h2>
+        <label for="titel">Divisie:</label>
+        <select name="options">
+            <option value="alpha">Alpha</option>
+            <option value="beta">Beta</option>
+            <option value="gamma">Gamma</option>
+            <option value="delta">Delta</option>
+            <option value="epsilon">Epsilon</option>
+        </select>
+
+        <label for="titel">Business Unit:</label>
+        <select name="options">
+            <option value="alpha">Alpha</option>
+            <option value="beta">Beta</option>
+            <option value="gamma">Gamma</option>
+            <option value="delta">Delta</option>
+            <option value="epsilon">Epsilon</option>
+        </select>
+
+        <label for="titel">Vestiging:</label>
+        <select name="options">
+            <option value="alpha">Alpha</option>
+            <option value="beta">Beta</option>
+            <option value="gamma">Gamma</option>
+            <option value="delta">Delta</option>
+            <option value="epsilon">Epsilon</option>
+        </select>
+
+        <label for="titel">Bron:</label>
+        <select name="options">
+            <option value="alpha">Alpha</option>
+            <option value="beta">Beta</option>
+            <option value="gamma">Gamma</option>
+            <option value="delta">Delta</option>
+            <option value="epsilon">Epsilon</option>
+        </select>
+
+        <label for="titel">ID-Nummer Bron:</label>
+        <p class="form-comment">Deze is te vinden op de SPIE Werknemerspas.</p>
+        <input type="number" id="datum" name="input-01">
+
+
+        <button onclick="logFunction()">Melding Versturen</button>
     </form>
     
 </div>
+
+<script>
+function logFunction(){
+    alert("Dit formulier werkt natuurlijk nog niet.");
+}
+</script>
 
 </body>
 </html>
