@@ -18,6 +18,10 @@ body{
     z-index: 1;
 }
 
+.navbar-container#mobile{
+    display: none;
+}
+
 nav{
     display: flex;
     height: 60px;
@@ -592,11 +596,57 @@ nav a:hover{
         line-height: 150%;
     }
 
-    .navbar-container li{
+    .navbar-container{
         display: none;
     }
 
     .navbar-container li:last-child{
+        animation: none;
+    }
+
+    .navbar-container#mobile{
         display: initial;
+    }
+
+    .navbar-container nav{
+        padding: 0px 20px;
+    }
+
+    .table-container{
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    .melding-form{
+        padding: 0px;
+        max-width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .melding-form h2{
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .melding-form label{
+        font-size: 14px;
+    }
+
+    .melding-form input{
+        max-width: 100%;
+        font-size: 14px;
+        background-color: #fff;
+    }
+
+    .melding-form select{
+        background-color: #fff;
+    }
+
+    .melding-form .form-comment{
+        line-height: 150%;
+        font-size: 14px;
     }
 }
